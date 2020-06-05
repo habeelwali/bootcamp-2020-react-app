@@ -30,6 +30,6 @@ jobs:
       with:
         cmd: install
     - name: creating build
-      run: npm run build
+      run: npm build
     - name: deploying on surge
       run: surge ./buildhttp://bootcamp_2020_practic.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
