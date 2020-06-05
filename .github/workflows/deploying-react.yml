@@ -25,8 +25,8 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         version: 12
-    - name: Publish to npm
-      uses: pascalgn/npm-publish-action@1.2.0
+    - name: GitHub Action for NPM/Chrome
+  uses: daleobrien/npm-with-chrome-browser-action@v1.0.1
       with:
         cmd: install
       
