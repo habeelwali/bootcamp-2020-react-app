@@ -25,10 +25,10 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         version: 12
-    - name: GitHub Action for NPM/Chrome
-      uses: daleobrien/npm-with-chrome-browser-action@v1.0.1
+    - name: NPM Simple Publisher
+      uses: pedromcunha/npm-publisher@0.0.3
       with:
-        cmd: install
+       cmd: install
       
     - name: creating build
       run: npm build
