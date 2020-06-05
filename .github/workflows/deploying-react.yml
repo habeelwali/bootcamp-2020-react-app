@@ -29,8 +29,10 @@ jobs:
       uses: pascalgn/npm-publish-action@1.2.0
       with:
         cmd: install
+      
     - name: creating build
       run: npm build
+      
     - name: installing surge
       run: npm install -g surge
       
